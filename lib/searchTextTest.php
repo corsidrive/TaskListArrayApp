@@ -8,41 +8,41 @@ $testCases = [
         'expectedCount' => 2,
         'description' => 'ricerca testo Latte'
     ],
-    [
-        'searchText' => 'latte',
-        'expectedCount' => 2,
-        'description' => 'ricerca testo latte'
-    ],
-    [
-        'searchText' => 'LATTE',
-        'expectedCount' => 2,
-        'description' => 'ricerca testo LATTE'
-    ],
-    [
-        'searchText' => 'fare',
-        'expectedCount' => 3,
-        'description' => 'ricerca testo fare'
-    ],
-    [
-        'searchText' => '  fare   ',
-        'expectedCount' => 3,
-        'description' => 'ricerca testo fare con spazi'
-    ],
-    [
-        'searchText' => 'redmond',
-        'expectedCount' => 1,
-        'description' => 'ricerca testo redmond'
-    ],
-    [
-        'searchText' => '',
-        'expectedCount' => 9,
-        'description' => 'ricerca testo vuoto'
-    ],
-    [
-        'searchText' => '      ',
-        'expectedCount' => 9,
-        'description' => 'ricerca testo con spazi'
-    ]
+    // [
+    //     'searchText' => 'latte',
+    //     'expectedCount' => 2,
+    //     'description' => 'ricerca testo latte'
+    // ],
+    // [
+    //     'searchText' => 'LATTE',
+    //     'expectedCount' => 2,
+    //     'description' => 'ricerca testo LATTE'
+    // ],
+    // [
+    //     'searchText' => 'fare',
+    //     'expectedCount' => 3,
+    //     'description' => 'ricerca testo fare'
+    // ],
+    // [
+    //     'searchText' => '  fare   ',
+    //     'expectedCount' => 3,
+    //     'description' => 'ricerca testo fare con spazi'
+    // ],
+    // [
+    //     'searchText' => 'redmond',
+    //     'expectedCount' => 1,
+    //     'description' => 'ricerca testo redmond'
+    // ],
+    // [
+    //     'searchText' => '',
+    //     'expectedCount' => 9,
+    //     'description' => 'ricerca testo vuoto'
+    // ],
+    // [
+    //     'searchText' => '      ',
+    //     'expectedCount' => 9,
+    //     'description' => 'ricerca testo con spazi'
+    // ]
 ];
 
 $mockTaskList = array(
