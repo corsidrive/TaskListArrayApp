@@ -5,6 +5,8 @@
  */
 function searchText($searchText) {
     return function($item) use ($searchText){
+        $searchText = trim($searchText);
+        
         if($searchText === '') {
             return true;
         } else {
