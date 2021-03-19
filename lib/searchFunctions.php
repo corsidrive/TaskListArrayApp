@@ -17,8 +17,9 @@ function searchStatus(string $status) : callable {
     return function($item) use ($status){
         if($status === '' || $status === 'all'){
             return true;
+        }else{
+            return $status === $item['status'];
         }
-
     }; 
 } 
 
