@@ -8,9 +8,9 @@ function searchText($searchText) {
         if($searchText === '') {
             return true;
         } else {
-            // echo "cerco: $searchText"." in {$item['taskName']} \n";
-            // var_dump(strpos($item['taskName'], $searchText) !== false); 
-            return strpos($item['taskName'], $searchText) !== false; 
+            $lowerTaskName = strtolower($item['taskName']);
+            $lowerSearchStatus = strtolower($searchText);
+            return strpos($lowerTaskName,$lowerSearchStatus) !== false; 
         }
     };
 }
