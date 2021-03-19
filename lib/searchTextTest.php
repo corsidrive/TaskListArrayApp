@@ -1,6 +1,6 @@
 <?php
 require "./vendor/testTools/testTool.php";
-require "./case_study/tasklistArray/lib/searchFunctions.php";
+require "./lib/searchFunctions.php";
 
 $testCases = [
     [
