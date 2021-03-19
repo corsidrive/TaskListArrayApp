@@ -13,8 +13,8 @@ function searchText($searchText) {
  * (progress|done|todo)
  * @return callable La funzione che verrà utilizzata da array_filter
  */
-function searchStatus(string $status) : callable {
-    
+function searchStatus(string $status) : callable {    
+    return function() {}; 
 } 
 
 
