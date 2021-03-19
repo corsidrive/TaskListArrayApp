@@ -4,8 +4,11 @@
  * Programmazione Funzionale - dichiarativo 
  */
 function searchText($searchText) {
-    
-   
+    return function($item) use ($searchText){
+        if($searchText === '') {
+            return true;
+        }
+    };
 }
 
 /**
