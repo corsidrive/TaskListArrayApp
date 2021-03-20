@@ -39,7 +39,8 @@ $mockTaskList = array(
     array("id"=>5497,"taskName"=>"Comprare il latte","status"=>"done","expirationDate"=>"2021-09-21"),
     array("id"=>5492,"taskName"=>"Fare preventivo per gestionale ACME","status"=>"todo","expirationDate"=>"2021-09-21"),
     array("id"=>6697,"taskName"=>"Onora il padre e  la madre","status"=>"todo","expirationDate"=>"2021-11-13"),
-    array("id"=>6695,"taskName"=>"Tornare a Redmond (windows 10)","status"=>"todo","expirationDate"=>"2021-11-13")
+    array("id"=>6695,"taskName"=>"Tornare a Redmond (windows 10)","status"=>"todo","expirationDate"=>"2021-11-13"),
+    array("id"=>6695,"taskName"=>"","status"=>"ciccio","expirationDate"=>"2021-11-13")
 );
 
 
