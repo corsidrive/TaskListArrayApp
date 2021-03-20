@@ -1,7 +1,7 @@
 <?php
     require './lib/searchFunctions.php';
     require './lib/JSONReader.php';
-    
+
     $searchText     =  isset($_GET['searchText'])   ?  filter_var($_GET['searchText'],FILTER_SANITIZE_STRING) : '';
     $searchStatus   =  isset($_GET['searchStatus']) ?  filter_var($_GET['searchStatus'],FILTER_SANITIZE_STRING) : 'all';
 
@@ -59,38 +59,17 @@
         <section class="tasklist mt-3">
             <h1 class="fw-bold fs-6">Elenco delle attività</h1>
             <table class="table">
-                <tr>
-                    <th class="w-100">nome</th>
-                    <th class="text-center">stato</th>
-                    <th class="text-center">data</th>
-                </tr>
-                <tr>
-                    <td>Comprare il latte</td>
-                    <td class="text-center">
-                        <span class="badge bg-danger text-uppercase">todo</span>
-                    </td>
-                    <td class="text-nowrap">
-                        3 Luglio
-                    </td>
-                </tr>
-                <tr>
-                    <td>Comprare la farina</td>
-                    <td class="text-center">
-                        <span class="badge bg-secondary text-uppercase">done</span>
-                    </td>
-                    <td class="text-nowrap">
-                        20 Settembre
-                    </td>
-                </tr>
-                <tr>
-                    <td>Comprare la farina</td>
-                    <td class="text-center">
-                        <span class="badge bg-primary text-uppercase">progress</span>
-                    </td>
-                    <td class="text-nowrap">
-                        18 Settembre
-                    </td>
-                </tr>
+                
+                <?php foreach ($result as $task) { ?>
+
+                    <tr>
+                        <th class="w-100">nome</th>
+                        <th class="text-center">stato</th>
+                        <th class="text-center">data</th>
+                    </tr>
+
+                <?php } ?>
+                
             </table>
 
         </section>
