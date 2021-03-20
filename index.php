@@ -1,5 +1,6 @@
 <?php
-
+    $searchText     =  isset($_GET['searchText'])   ?  filter_var($_GET['searchText'],FILTER_SANITIZE_STRING) : '';
+    $searchStatus   =  isset($_GET['searchStatus']) ?  filter_var($_GET['searchStatus'],FILTER_SANITIZE_STRING) : 'all';
 ?>
 <!DOCTYPE html>
 <html lang="en">
