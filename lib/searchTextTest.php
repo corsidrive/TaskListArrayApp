@@ -39,7 +39,7 @@ $testCases = [
         'description' => 'ricerca testo vuoto'
     ],
     [
-        'searchText' => '      ',
+        'searchText' => '     ',
         'expectedCount' => 9,
         'description' => 'ricerca testo con spazi'
     ]
